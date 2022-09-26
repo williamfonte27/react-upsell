@@ -1,0 +1,163 @@
+:root {
+    --upsell-primary: #465e88;
+    --upsell-secondary: #6488c7;
+    --white: #ffffff;
+}
+
+body {
+    background-color: #e2e2e2;
+}
+
+
+.bg-upsell-primary {
+    background-color: var(--upsell-primary);
+}
+
+.bg-upsell-secondary {
+    background-color: var(--upsell-secondary);
+}
+
+.text-upsell-primary {
+    background-color: var(--upsell-primary);
+    font-weight: bold;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-2x {
+    font-size: 1.5rem;
+    padding-right: 1.2rem;
+}
+
+.link-upsell {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-upsell:hover {
+    color: var(--upsell-primary);
+}
+
+.link-upsell-primary {
+    display: block;
+    color: var(--upsell-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-upsell-secondary {
+    display: block;
+    color: var(--upsell-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-upsell-active {
+    display: block;
+    color: var(--upsell-secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-header {
+    padding: 0.4rem;
+}
+
+.card-header-upsell {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+.card-body-upsell {
+    background-color: #c8cfda;
+    padding: 1rem;
+}
+
+.card-title-upsell {
+    color: #333;
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-text-upsell {
+    color: #333;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Checkbox custom */
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-checkbox input:checked ~ .checkmark {
+    background-color: #55af6c;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
